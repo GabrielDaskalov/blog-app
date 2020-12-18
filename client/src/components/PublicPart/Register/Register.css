@@ -1,0 +1,53 @@
+label
+{
+    font-weight: bold;
+}
+
+.registerBody
+{
+    background-color: burlywood;
+    text-align: center;
+    margin: -10px 0px 0px 0px;
+    padding: 4px;
+}
+
+.registerForm
+{
+    text-align: center;
+    margin: 20px;
+    background-color: whitesmoke;
+    padding: 30px;
+    height: 100px;
+    width: 800px;
+    text-align: center;
+    display: inline-table;
+}
+
+.regEmailField,
+.regUsrField,
+.regPswField,
+.cnfmPswField,
+.regAgeField,
+.regTownField,
+.regCountryField
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+
+}
+
+.regBtn
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

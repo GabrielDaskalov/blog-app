@@ -1,0 +1,21 @@
+.nav
+{
+    background-color: gainsboro;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+a
+{
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+Link
+{
+    background-color: lightgreen;
+}

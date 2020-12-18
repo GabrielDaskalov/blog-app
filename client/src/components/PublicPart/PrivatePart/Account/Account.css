@@ -1,0 +1,77 @@
+.id
+{
+    background-color: crimson;
+    width: 480px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.username
+{
+    background-color: crimson;
+    width: 480px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.email
+{
+    background-color: crimson;
+    width: 480px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.age
+{
+    background-color: crimson;
+    width: 480px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.town
+{
+    background-color: crimson;
+    width: 480px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.country
+{
+    background-color: crimson;
+    width: 480px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+.card
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: cornsilk;
+   
+}
+
+.img
+{
+    max-width: 500px;
+}
+
+.btn
+{
+    background-color: darkgray;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+}
+
+.bodyAccount
+{
+    padding: 40px 0px 0px 0px;
+    background-color: lightgreen;
+
+}

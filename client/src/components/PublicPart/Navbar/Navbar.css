@@ -1,0 +1,14 @@
+.nav
+{
+    background-color: gainsboro;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+a
+{
+    padding: 10px;
+    text-align: center;
+}

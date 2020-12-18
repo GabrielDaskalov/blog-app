@@ -1,0 +1,53 @@
+.bodyCategories
+{
+    background-color: burlywood;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: inline-flex;
+}
+
+.categories
+{
+    width: 1479px;
+
+}
+
+ul
+{
+    display: inline;
+}
+
+ul ul
+{
+    padding: 50px;
+}
+
+ul
+{
+    max-width: auto;
+    max-height: auto;
+}
+
+.box-1, .box-2, .box-3
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1 div
+{
+    margin: 0px 10px 0px 10px;
+
+}
+
+.box-2 div
+{
+    margin: 0px 10px 0px 10px;
+
+}
+
+.box-3 div
+{
+    margin: 0px 10px 0px 10px;
+
+}

@@ -1,0 +1,64 @@
+
+.loginBody
+{
+    background-color: cornflowerblue;
+    text-align: center;
+    margin: -10px 0px 0px 0px;
+    padding: 4px;
+}
+
+ .form
+{
+    text-align: center;
+    margin: 20px;
+    background-color: whitesmoke;
+    padding: 30px;
+    height: 100px;
+    width: 800px;
+    text-align: center;
+    display: inline-table;
+
+}
+
+.usrField, .pswField {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+.loginBtn
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.loginBtn:hover {
+    opacity: 0.8;
+  }
+
+.label
+{
+    font-weight: bold;
+}
+ 
+.imgContainer
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 350px 30px 350px;
+}
+
+.imgBody
+{
+    width: 200px;
+    text-align: center;
+    height: 200px;
+}

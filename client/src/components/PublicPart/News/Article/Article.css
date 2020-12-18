@@ -1,0 +1,44 @@
+.article
+{
+
+}
+
+.title
+{
+    background-color: khaki;
+    width: auto;
+    height: auto;
+    margin: 20px 100px 0px 0px;
+
+}
+
+.author
+{
+    background-color: cadetblue;
+    margin: 0px 100px 0px 0px;
+
+}
+
+.date
+{
+    background-color: yellow;
+}
+
+.image
+{
+    height: 400px;
+    width: 830px;
+}
+
+.notFoundImage
+{
+    height: 300px;
+    width: 730px;
+}
+.link
+{
+    display: table-cell;
+    background-color: limegreen;
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+}
