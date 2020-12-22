@@ -34,7 +34,7 @@ const Login=()=>
             localStorage.setItem("auth-token", loginRes.data.token)
             setCookie("auth-token", loginRes.data.token)
 
-            history.push("/home")
+            history.push("/privateHome")
             }
         catch(err)
             {

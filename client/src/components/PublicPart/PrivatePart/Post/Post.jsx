@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import UserContext from '../../../../context/userContext'
 import {Link} from 'react-router-dom'
+import './Post.css'
+import ShowNewPost from './ShowNewPost/ShowNewPost';
  
 
 class Post extends Component {
@@ -100,17 +102,17 @@ class Post extends Component {
      render() {
 
         const output = !this.state.postSuccessfull?
-        <div>
-                <h1> Create a post:</h1>
-                <form onSubmit={this.submitPost}>
-                    <label>Type title: </label>
-                    <input type="text" onChange={this.inputTitle}/>
+        <div className="post-body">
+                <form onSubmit={this.submitPost} className="create-post-body">
+                    <h1 className="create-post-title"> Create a post:</h1>
+                    <label className="create-post-title">Type title: </label>
+                    <input type="text" onChange={this.inputTitle} className="create-post-title-input" required/>
                     <br/>
-                    <label>Type content: </label>
-                    <input type="text" onChange={this.inputContent}/>
+                    <label className="create-post-content">Type content: </label>
+                    <input type="text" onChange={this.inputContent} className="create-post-content-input" required/>
                     <br/>
-                    <label htmlFor="categories">Choose a category:</label>
-                    <select name="categories" id="categories" onChange={this.inputCategory}>
+                    <label htmlFor="categories"className="create-post-categories">Choose a category:</label>
+                    <select name="categories" id="categories" onChange={this.inputCategory} className="create-post-categories-input">
                         <option value="Finance">Finance</option>
                         <option value="Sport">Sport</option>
                         <option value="Health">Health</option>
@@ -121,11 +123,11 @@ class Post extends Component {
                         <option value="Other">Other</option>
                     </select>
                     <br/>
-                    <input type="submit" value="Submit post" className="submitPost"/>
+                    <input type="submit" value="Submit post" className="create-post-btn"/>
                 </form>        
         </div>
         :
-        <Link to={{ pathname: '/showNewPost', state: {post: this.state.post}}}>Show new post</Link>
+        <ShowNewPost value={this.state.post}></ShowNewPost>
         return (
             <div>
                 {output}   

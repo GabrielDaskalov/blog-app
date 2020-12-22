@@ -1,0 +1,43 @@
+.new-post-container
+{
+    background-color: coral;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.new-post-body
+{
+    background-color: blueviolet;
+    width: 500px;
+    display: inline-grid;
+    justify-content: center;
+
+}
+
+.new-post-title
+{
+
+}
+
+.new-post-content
+{
+
+}
+
+.new-post-category
+{
+
+}
+
+.new-post-author
+{
+
+
+}
+
+.new-post-date
+{
+
+
+}
+

@@ -1,5 +1,47 @@
+
 .footer
 {
-    background-color: gainsboro;
+    background-color: khaki;
     text-align: center;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    position:absolute bottom;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.nav-icons
+{
+  
+}
+
+.container-icons
+{
+    display: inline;
+    margin-left: 80%;
+    margin-top: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }

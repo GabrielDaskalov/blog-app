@@ -1,14 +1,17 @@
 .nav
 {
-    background-color: gainsboro;
+    background-color:khaki;
     height: 50px;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    padding-bottom: 12px;
 }
 
 a
 {
+    font-size: 20px;
+    margin: 15px;
     padding: 10px;
     text-align: center;
 }

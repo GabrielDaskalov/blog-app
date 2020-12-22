@@ -5,6 +5,7 @@ import './PrivateNavbar.css'
 function Navbar(props) {
     return (
         <div className="nav">
+            <Link to = "/privateHome">Home</Link>
             <Link to = "/post">Post</Link>
             <Link to = "/categories">Categories</Link>
             <Link to = "/search">Search</Link>

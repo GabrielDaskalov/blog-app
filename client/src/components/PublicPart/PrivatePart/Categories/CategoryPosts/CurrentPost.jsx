@@ -19,11 +19,14 @@ const CurrentPost=(props)=>{
 
 
     return (
-        <div className="post">
+        <div className="current-post-body">
+         <div className="current-post">
             <h3 className="title">{props.post.title}</h3>
             <h3 className="author">{props.post.author}</h3>
-            <button className="button" onClick={showCurrentPost}>Show</button>
+            <button className="current-post-button" onClick={showCurrentPost}>Show</button>
+         </div>
         </div>
+     
     );
 };
 

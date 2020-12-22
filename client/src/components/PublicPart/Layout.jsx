@@ -19,7 +19,7 @@ function Layout(props) {
             <Navbar></Navbar>
             }
             <AppRouter></AppRouter>
-             {/* <Footer></Footer> */}
+             <Footer></Footer>
         </div>
     );
 }

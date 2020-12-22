@@ -38,7 +38,7 @@ class About extends Component {
                         </div>
                     </div>
                     
-                    <div className="column">
+                    {/* <div className="column">
                         <div className="card-3">
                             <img src="girl-about.png" alt="Angelinka" className="img-3"/>
                             <div className="container">
@@ -49,7 +49,7 @@ class About extends Component {
                                 <p><button className="button">Contact</button></p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>          
 
             </div>

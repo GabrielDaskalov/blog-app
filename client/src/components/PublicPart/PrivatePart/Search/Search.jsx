@@ -153,16 +153,20 @@ const Search =()=> {
         </div>:<div></div>
 
         return (
-            <div className="search" onSubmit={search}>
-                <form className="searchForm">
-                <h1>Search: </h1>
-                <input type="text" className="searchField" onChange={changeInput}/>
-                <input type="submit" value="Search" className="searchBtn"/>
+            <div className="search-component-container">
+            <div className="search-img"/>
+             <div className="search" onSubmit={search}>
+                <form className="search-component-form">
+                    <h1 className="search-title">Search: </h1>
+                    <input type="text" className="search-field" onChange={changeInput}/>
+                    <input type="submit" value="Search" className="search-component-btn"/>
                 </form>
                 {postsAfterSearch}
                 {categoriesAfterSearch}
                 {usersAfterSearch}
+             </div>
             </div>
+         
         );
     }
 

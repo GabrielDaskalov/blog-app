@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useHistory} from 'react-router-dom'
+import './AccountCard.css'
 
 function AccountCard(props) {
 
@@ -19,14 +20,17 @@ function AccountCard(props) {
     }
 
     return (
-        <div className="card">
-            <h2>Username: {user.username}</h2>
-            <h2>Email: {user.email}</h2>
-            <h3>Age: {user.age}</h3>
-            <h3>Town: {user.town}</h3>
-            <h3>Country: {user.country}</h3>
-            <button onClick={(e)=>showUserPosts(user.posts)}>Show posts</button>
+        <div className="account-card-container">
+            <div className="account-card">
+                <h2>Username: {user.username}</h2>
+                <h2>Email: {user.email}</h2>
+                <h3>Age: {user.age}</h3>
+                <h3>Town: {user.town}</h3>
+                <h3>Country: {user.country}</h3>
+                <button onClick={(e)=>showUserPosts(user.posts)}>Show posts</button>
+            </div>
         </div>
+       
     );
 }
 

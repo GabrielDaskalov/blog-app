@@ -89,21 +89,21 @@ function ChangeDetails(props) {
         <div className="bodyChangeDetails">
             <form className="form" onSubmit={submit}>
                 <label>Change username: </label>
-                <input type="text" onChange={(e)=>changeUsername(e.target.value)}/>
+                <input type="text" className="change-details-field-usr" onChange={(e)=>changeUsername(e.target.value)}/>
                 <br/>
                 <label>Change age: </label>
-                <input type="number" onChange={(e)=>changeAge(e.target.value)}/>
+                <input type="number" className="change-details-field-age" onChange={(e)=>changeAge(e.target.value)}/>
                 <br/>
                 <label>Change town: </label>
-                <input type="text" onChange={(e)=>changeTown(e.target.value)}/>
+                <input type="text" className="change-details-field-town" onChange={(e)=>changeTown(e.target.value)}/>
                 <br/>
                 <label>Change country: </label>
-                <input type="text" onChange={(e)=>changeCountry(e.target.value)}/>
+                <input type="text" className="change-details-field-country" onChange={(e)=>changeCountry(e.target.value)}/>
                 <br/>
                 <label>Change email: </label>
-                <input type="text" onChange={(e)=>changeEmail(e.target.value)}/>
+                <input type="text" className="change-details-field-email" onChange={(e)=>changeEmail(e.target.value)}/>
                 <br/>
-                <input type="submit" value="save"/>
+                <input type="submit" value="save" className="change-details-btn"/>
             </form>
         </div>
     );

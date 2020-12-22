@@ -13,11 +13,10 @@ const Article=(props)=>{
 
     const output =
     <div className="article">
-        <h3 className="title">{props.article.title}</h3>
-        <h4 className="author">{author}</h4>
+        <h3 className="title-article">{props.article.title}</h3>
+        <h4 className="author-article">{author}</h4>
         {checkPicture}
-        <a href={props.article.url} className="link">Link</a>
-        <span className="date">{props.article.published_at}</span>
+        <a href={props.article.url} className="link">View</a>
     </div>
     return (
         <div>

@@ -17,6 +17,7 @@ import ShowCurrentPost from './components/PublicPart/PrivatePart/Categories/Cate
 import CategoryPosts from './components/PublicPart/PrivatePart/Categories/CategoryPosts/CategoryPosts'
 import AccountCard from './components/PublicPart/PrivatePart/Account/AccountCard/AccountCard'
 import ShowUserPosts from './components/PublicPart/PrivatePart/Account/ShowUserPosts/ShowUserPosts'
+import PrivateHome from './components/PublicPart/PrivatePart/PrivateHome/PrivateHome'
 
 export const AppRouter = () => {
     return (
@@ -39,6 +40,7 @@ export const AppRouter = () => {
             <Route path='/showCategoryPosts' component={CategoryPosts}/>
             <Route path='/accountCard' component={AccountCard}/>
             <Route path='/showUserPosts' component={ShowUserPosts}/>
+            <Route path="/privateHome" component={PrivateHome}/>
         </div>
     );
 };

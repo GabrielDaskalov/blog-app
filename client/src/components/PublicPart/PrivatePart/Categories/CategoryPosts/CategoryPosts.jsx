@@ -73,7 +73,7 @@ const CategoryPosts =(props)=>{
         posts &&
         posts.length > 0 &&
         ( posts.map((post, id)=>
-            <ul key={id} className="currentPost">
+            <ul key={id} className="category-posts">
                 <CurrentPost post={post} categoryName={category}/>
             </ul>
         ))

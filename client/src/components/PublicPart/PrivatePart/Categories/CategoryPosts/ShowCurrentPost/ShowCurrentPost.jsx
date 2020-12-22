@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserContext from '../../../../../../context/userContext';
 import axios from 'axios'
+import './ShowCurrentPost.css'
 
 
 class ShowCurrentPost extends Component {
@@ -106,15 +107,21 @@ class ShowCurrentPost extends Component {
 
 
         return (
-            <div>
+            <div className="show-current-post-container">
+             <div className="show-current-post-body">
                 <h1>{this.state.currentPost.title}</h1>
-                <h1>{this.state.currentPost.content}</h1>
+                <p className="show-current-post-content">{this.state.currentPost.content}</p>
+                <h1>Comments: </h1>
+                <div className="output-comments">
                 {outputComments}
+                </div>
                 <form className="commentForm" onSubmit={this.postComment}>
-                    <input type="text" className="commentField" onChange={this.addComment}/>
-                    <input type="submit" value="Comment" className="buttonComment"/>
+                    <input type="text" className="show-current-comment-field" onChange={this.addComment}/>
+                    <input type="submit" value="Comment" className="button-comment"/>
                 </form>
+             </div>
             </div>
+        
         );
     }
 }

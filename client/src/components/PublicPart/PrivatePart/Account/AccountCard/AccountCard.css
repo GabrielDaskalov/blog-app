@@ -1,0 +1,14 @@
+.account-card
+{
+    background-color: peru;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 40%;
+}
+
+.account-card-container
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

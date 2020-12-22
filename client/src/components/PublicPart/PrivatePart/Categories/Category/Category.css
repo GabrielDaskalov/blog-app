@@ -10,3 +10,8 @@
 {
     margin: 50px 50px 50px 50px;
 }
+
+.btnCategory:hover
+{
+    background-color: coral;
+}

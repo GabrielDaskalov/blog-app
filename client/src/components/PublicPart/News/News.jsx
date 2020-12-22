@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import NEWS_APIKEY from '../../../constants'
 import axios from 'axios'
 import Article from './Article/Article';
+import Spinner from '../../../spinners/Spinner';
+
+import './News.css'
 
 class News extends Component {
 
@@ -48,7 +51,7 @@ class News extends Component {
         let tempArticles = this.state.articles;
         let fiveRandomArticles =[];
        
-        for(let i = 0; i< 5;i++)
+        for(let i = 0; i< 6;i++)
         {
             let randomNum = Math.floor(Math.random()*21);
            
@@ -68,10 +71,10 @@ class News extends Component {
     }
 
     render() {
-        const output= !this.state.showContent ? console.log("emty") : this.getFirstFiveArticles();
+        const output= !this.state.showContent ? <Spinner/> : this.getFirstFiveArticles();
 
         return (
-            <div>
+            <div className="bodyNews">
                 {output}
             </div>
         );
