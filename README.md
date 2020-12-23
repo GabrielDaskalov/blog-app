@@ -22,7 +22,6 @@ Blog-system
 
 4.1 NodeJS and ExpressJS Setup:
     1. Download and install NodeJS from https://nodejs.org/en/
-    2. Run command 'npm install express --save' to install ExpressJS
 
 4.2 MongoDB Setup:
     1. Register in MongoDB Atlas: https://www.mongodb.com/cloud/atlas/signup
