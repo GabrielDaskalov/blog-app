@@ -2,3 +2,9 @@
 {
     
 }
+
+.category-posts-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}

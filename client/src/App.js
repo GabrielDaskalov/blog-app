@@ -16,7 +16,8 @@ function App() {
 
   useEffect(() => {
 
-     history.push("/home")
+
+    // history.push("/home")
     const checkLoggedIn=async ()=>
     {
       let token= localStorage.getItem("auth-token");
@@ -51,6 +52,22 @@ function App() {
         }
     }
     checkLoggedIn()
+
+
+    if(localStorage.getItem("auth-token") !== "")
+    {
+      console.log("token logged:" ,localStorage.token)
+
+      history.push("/privateHome")
+    }
+    else
+    {
+      console.log("token not logged" ,localStorage.token)
+
+      history.push("/home")
+
+    }
+    
   }, [])
 
   return (

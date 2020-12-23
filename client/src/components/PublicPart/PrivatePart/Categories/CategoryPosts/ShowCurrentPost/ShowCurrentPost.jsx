@@ -100,7 +100,7 @@ class ShowCurrentPost extends Component {
 
         const outputComments= comments.length > 0?
         comments.map((comment, id)=>
-        <p><ul key={id}>{comment}</ul></p>
+        <ul key={id}>{comment}</ul>
         )
         :
         <div>No comments</div>

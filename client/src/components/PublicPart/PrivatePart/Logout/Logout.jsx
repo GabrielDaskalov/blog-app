@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react';
 import UserContext from '../../../../context/userContext'
 import {useHistory} from 'react-router-dom'
 import { deleteCookie } from '../../../../helpers/cookies';
-
+import './Logout.css'
 
 const Logout = () => {
 
@@ -34,15 +34,20 @@ const Logout = () => {
     // <div>You are logged out</div>
     // :
     const output=
-    <button onClick={logout}>
+    <button className="logout-btn" onClick={logout}>
     Logout
     </button>
 
 
     return (  
-        <div>
+        <div className="logout-container">
+         <div className="logout-page">
+            <h1 className="logout-question">Do you wish to logout of your page?</h1>
+            <h1 className="logout-h">If you are sure, please click the button bellow.</h1>
             {output}
+         </div>
         </div>
+      
     );
 };
 

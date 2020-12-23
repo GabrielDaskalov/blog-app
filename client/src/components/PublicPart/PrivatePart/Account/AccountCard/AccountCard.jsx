@@ -22,12 +22,12 @@ function AccountCard(props) {
     return (
         <div className="account-card-container">
             <div className="account-card">
-                <h2>Username: {user.username}</h2>
-                <h2>Email: {user.email}</h2>
-                <h3>Age: {user.age}</h3>
-                <h3>Town: {user.town}</h3>
-                <h3>Country: {user.country}</h3>
-                <button onClick={(e)=>showUserPosts(user.posts)}>Show posts</button>
+                <h2 className="account-card-usr">Username: <b className="acc-card-b-usr">{user.username}</b></h2>
+                <h2 className="account-card-email">Email: <b className="acc-card-b-email">{user.email}</b></h2>
+                <h3 className="account-card-age">Age: <b className="acc-card-b-age">{user.age}</b></h3>
+                <h3 className="account-card-town">Town: <b className="acc-card-b-town">{user.town}</b></h3>
+                <h3 className="account-card-country">Country: <b className="acc-card-b-country">{user.country}</b></h3>
+                <button className="account-card-btn-show" onClick={(e)=>showUserPosts(user.posts)}>Show posts</button>
             </div>
         </div>
        

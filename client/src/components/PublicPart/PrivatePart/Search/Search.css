@@ -31,13 +31,11 @@
 
 .search-component-container
 {
-    background-color: greenyellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:cornflowerblue;
 }
 
-/* .search-img
-{
-    background-image: url('../../../../images/search2.png');
-} */
 
 .search
 {
@@ -52,4 +50,131 @@
 	background-repeat: no-repeat;
     height:500px;
     width: 500px; */
+}
+
+.users-after-search
+{
+    background-color: beige;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    width: 44%;
+}
+
+.categories-after-search
+{
+    background-color: beige;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    width: 44%;
+
+}
+
+.posts-after-search
+{
+    background-color: beige;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    width: 44%;
+    
+}
+
+.empty-posts
+{
+    background-size: cover;
+    background-position: right center;
+	background-repeat: no-repeat;
+    height:300px;
+    width: 500px;
+}
+
+.empty-posts
+{
+    width: 44%;
+    height: 400px;
+
+}
+.users-founded
+{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.categories-founded
+{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.posts-founded
+{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+.search-component-usr
+{
+    padding-left: 30px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+.search-component-email
+{
+    padding-left: 30px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+.search-component-users-details
+{
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.search-component-hide-btn
+{
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+}
+
+.search-component-par-hide
+{
+    margin-bottom: 50px;
+}
+
+.search-component-category-name
+{
+    padding-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.search-component-show-posts
+{
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.search-component-post-title
+{
+    padding-left: 30px;
+    margin-top: 30px;
+    font-size: 20px; 
+}
+
+.search-component-show-post
+{
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;   
 }

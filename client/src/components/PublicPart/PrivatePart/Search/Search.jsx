@@ -103,52 +103,52 @@ const Search =()=> {
 
         console.log(showContentPosts)
         const postsAfterSearch= showContentPosts?
-        <div>
-        <h1>Posts founded: </h1>
+        <div className="posts-after-search">
+        <h1 className="posts-founded">Posts founded: </h1>
         {postsToShow.map((post, id)=>
         <ul key={id}>
-            <h2>{post.title}</h2>
-            <button onClick={(e)=>showPost(post)}>Show post</button>
+            <h2 className="search-component-post-title">{post.title}</h2>
+            <button className="search-component-show-post" onClick={(e)=>showPost(post)}>Show post</button>
         </ul>
         )}
         <p>
-        <button onClick={(e)=>hide("Posts")}>Hide</button>
+        <button className="search-component-hide-btn" onClick={(e)=>hide("Posts")}>Hide</button>
         </p>
         </div>
-        : <div>
-        {/* <p>There are no posts with this name</p> */}
+        : <div className="empty-posts">
+            
         </div>
 
         const categoriesAfterSearch= showContentCategories?
-        <div>
-            <h1>Categories founded: </h1>
+        <div className="categories-after-search">
+            <h1 className="categories-founded">Categories founded: </h1>
             {
                 categoriesToShow.map((category, id)=>
                 <ul key={id}>
-                    <h2>{category.name}</h2>
-                    <button onClick={(e)=>showCategoryPosts(category.name)}>Show posts</button>
+                    <h2 className="search-component-category-name">{category.name}</h2>
+                    <button className="search-component-show-posts" onClick={(e)=>showCategoryPosts(category.name)}>Show posts</button>
                 </ul>
                 )
             }
             <p>
-             <button onClick={(e)=>hide("Categories")}>Hide</button>
+             <button className="search-component-hide-btn" onClick={(e)=>hide("Categories")}>Hide</button>
             </p>
         </div>:<div></div>
 
         const usersAfterSearch=showContentUsers?
-        <div>
-            <h1>Users founded: </h1>
+        <div className="users-after-search">
+            <h1 className="users-founded">Users founded: </h1>
             {
                 usersToShow.map((user,id)=>
                 <ul key={id}>
-                    <h2>Username: {user.username}</h2>
-                    <h2>Email: {user.email}</h2>
-                    <button onClick={(e)=>showDetails(user)}>Details</button>
+                    <h2 className="search-component-usr">Username: {user.username}</h2>
+                    <h2 className="search-component-email">Email: {user.email}</h2>
+                    <button className="search-component-users-details" onClick={(e)=>showDetails(user)}>Details</button>
                 </ul>
                 )
             }
-             <p>
-             <button onClick={(e)=>hide("Users")}>Hide</button>
+             <p className="search-component-par-hide">
+             <button className="search-component-hide-btn" onClick={(e)=>hide("Users")}>Hide</button>
             </p>
         </div>:<div></div>
 

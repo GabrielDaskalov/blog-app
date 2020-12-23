@@ -1,0 +1,45 @@
+.logout-container
+{
+    height: 500px;
+    background-color:azure;
+    padding-top: 20px;
+
+}
+
+.logout-page
+{
+    background-color: darkkhaki;
+    height: 300px;
+    width: 70%;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.logout-question
+{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.logout-h
+{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.logout-btn
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 43%;
+    /* padding-top: 20px; */
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.logout-btn:hover
+{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}

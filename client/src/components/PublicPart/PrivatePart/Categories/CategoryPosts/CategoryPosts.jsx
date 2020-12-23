@@ -70,13 +70,18 @@ const CategoryPosts =(props)=>{
     const showPosts =showContent?
         <div>Zarejdame</div>
         :
-        posts &&
-        posts.length > 0 &&
-        ( posts.map((post, id)=>
-            <ul key={id} className="category-posts">
-                <CurrentPost post={post} categoryName={category}/>
-            </ul>
-        ))
+        <div className="category-posts-container">
+            {
+             posts &&
+             posts.length > 0 &&
+             ( posts.map((post, id)=>
+             <ul key={id} className="category-posts">
+                    <CurrentPost post={post} categoryName={category}/>
+             </ul>
+            ))
+            }
+        </div>
+ 
 
     const output= posts.length === 0? <div>There are no posts in this category!</div> : showPosts;
 

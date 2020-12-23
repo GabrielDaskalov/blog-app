@@ -57,7 +57,7 @@
     background-color: rgb(215, 235, 102);
   }
   
-  .button {
+  .about-btn-contact2, .about-btn-contact1 {
     border: none;
     outline: 0;
     display: inline-block;
@@ -67,6 +67,7 @@
     text-align: center;
     cursor: pointer;
     width: 100%;
+    padding-left: 0px;
   }
   
   .button:hover {

@@ -29,7 +29,7 @@
     box-sizing: border-box;
   }
 
-.loginBtn
+.login-component-btn
 {
   background-color: #4CAF50;
   color: white;
@@ -37,10 +37,10 @@
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
 }
 
-.loginBtn:hover {
+.login-component-btn:hover {
     opacity: 0.8;
   }
 

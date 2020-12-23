@@ -1,14 +1,95 @@
 .account-card
 {
     background-color: peru;
-    padding-top: 30px;
+    padding-top: 100px;
     padding-bottom: 30px;
     width: 40%;
+    border-radius: 20px;
+    height: 450px;
 }
 
 .account-card-container
 {
+    padding-top:60px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
     display: flex;
     justify-content: center;
+    background-color:darkseagreen;
+}
+
+.account-card-usr
+{
+    font-size: 30px;
+}
+
+.acc-card-b-usr
+{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.account-card-email
+{
+    font-size: 30px;
+
+}
+
+.acc-card-b-email
+{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.account-card-age
+{
+    font-size: 30px;
+
+}
+
+.acc-card-b-age
+{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.account-card-town
+{
+    font-size: 30px;
+
+}
+
+.acc-card-b-town
+{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.account-card-country
+{
+    font-size: 30px;
+
+}
+
+.acc-card-b-country
+{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.account-card-btn-show
+{
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+}
+
+.account-card-btn-show:hover
+{
+    background-color: darkgray;
+    cursor: pointer;
 }

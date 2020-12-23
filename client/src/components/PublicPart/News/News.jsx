@@ -64,7 +64,7 @@ class News extends Component {
         }
 
         return fiveRandomArticles.map((article, key)=>
-            <div key={key}>
+            <div key={key} className="news-articles">
                 <Article article={article}/>
             </div>
         )

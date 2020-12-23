@@ -20,7 +20,7 @@ class About extends Component {
                                 <p className="title-1">CEO & Founder</p>
                                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                 <p>jane@example.com</p>
-                                <p><button className="button">Contact</button></p>
+                                <p><button className="about-btn-contact1">Contact</button></p>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ class About extends Component {
                                 <p className="title-2">IT Manager</p>
                                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                 <p>mike@example.com</p>
-                                <p><button className="button">Contact</button></p>
+                                <p><button className="about-btn-contact2">Contact</button></p>
                             </div>
                         </div>
                     </div>

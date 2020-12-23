@@ -36,15 +36,30 @@ router.post("/newComment", async (req, res)=>
 
         if(!existingUser)
         {
+            
             return res.status(401).json({msg: "A user with this username doesn't exist."})
         }
 
-        const existingCategory= await Category.findOne({name: category})
+        console.log("user checked!!!")
+        let existingCategory= await Category.findOne({name: category})
+
+        console.log("ex post cat:" ,existingPost.category)
+
+        if(!existingCategory && existingPost.category)
+        {
+            existingCategory= await Category.findOne({name: existingPost.category})
+            console.log("category and psot checked!!!")
+
+        }
+
+        console.log("existing cat: " ,existingCategory)
 
         if(!existingCategory)
         {
             return res.status(401).json({msg: "A category with this name doesn't exist."})
         }
+
+        console.log("category checked")
 
         const categoryId = existingCategory._id;
         console.log("category id: " ,categoryId)
@@ -127,8 +142,25 @@ router.post("/newComment", async (req, res)=>
         existingPost.comments.push(comment)
         await existingPost.save()
 
-        existingUser.comments.push(comment)
-        await existingUser.save()
+        let updatedCommentsByUsers= await User.findOneAndUpdate(
+            {"username": username},
+            {
+                "$push":
+                {"posts.$[b].comments": comment}
+            },
+            {
+                "new": true,
+                "arrayFilters": [
+                    {"b.title": postTitle}
+                ]
+            }
+
+        )
+
+        console.log("updated commments by user:" ,updatedCommentsByUsers)
+
+        // existingUser.posts.filter(p=>p.title===postTitle).comments.push(comment)
+        // await existingUser.save()
 
 
         res.send("connected")
